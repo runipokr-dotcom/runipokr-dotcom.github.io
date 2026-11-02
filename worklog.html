@@ -36,6 +36,12 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-02 22:06</b><ul>
+<li>한 일: 기존 픽셀 사무실 v5.1을 보존하고, Supabase OAuth 2.1용 <code>/oauth/consent</code> 화면과 안전 컨트롤러를 별도 v5.2 로컬 준비본에 구현</li>
+<li>보안: 허용 클라이언트 목록은 실제 등록 전까지 비워 모든 요청을 차단. 소유자 로그인·허용 client ID·정확한 HTTPS callback·요청 scope를 대조하고 사용자가 버튼을 누른 경우에만 승인·거절하도록 구성</li>
+<li>검증: 악성 입력, 중복 파라미터, 미인증, 소유자 아님, 다른 클라이언트, 자동 승인 응답, 변조 callback 방어와 기존 인증 회귀 테스트 통과</li>
+<li>결과물 경로: ~/Downloads/AI 작업파일/지피티/온라인_AI_사무실_v5_2_OAuth동의화면_로컬준비_20261102/</li>
+<li>남은 일: 실제 OAuth 클라이언트 등록값 확보 후 허용 목록 입력, 별도 승인 뒤 운영 배포·OAuth 서버 활성화, 사용자의 최종 연결 동의. 이번 작업에서 운영 설정 변경·배포 없음</li></ul></div>
 <div class="entry"><b>2026-11-02 21:52</b><ul>
 <li>한 일: dot 실제 연결 전 Supabase OAuth 2.1 서버·OAuth 앱·Site URL 상태와 ChatGPT custom MCP 콜백 URI 요건을 읽기 전용으로 점검</li>
 <li>결과: ai-office OAuth Server는 비활성, OAuth 앱 0개, 신규 등록 비활성 상태. Site URL과 기존 로그인 콜백은 유지되며 설정 변경·비밀키 생성 없음</li>
