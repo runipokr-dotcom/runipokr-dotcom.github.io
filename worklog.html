@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-02 23:55</b><ul>
+<li>한 일: 기존 v5.2.1을 보존하고 ChatGPT OAuth 단일 client·단일 owner·단일 callback·30일 만료를 적용한 v5.3 로컬 준비본 제작</li>
+<li>결과: 실제 요청 scope를 표시하고 <code>openid</code>만 허용. 사무실 3개 자리 본인 메시지 읽기·dot 답변 쓰기·자동 실행/PC 제어 제외 문구와 만료시각을 표시하며 다른 client·owner·callback·scope 및 만료 후 승인을 차단</li>
+<li>결과물 경로: ~/Downloads/AI 작업파일/지피티/온라인_AI_사무실_v5_3_OAuth30일단일허용_로컬준비_20261102/</li>
+<li>남은 일: backend의 OAuth client 전용 RLS 분리 완료 확인 후 운영 배포. 그 전에는 새 OAuth 토큰이 기존 DB 권한을 상속하지 않도록 미배포 상태 유지</li></ul></div>
 <div class="entry"><b>2026-11-02 23:45</b><ul>
 <li>한 일: Supabase <code>ai-office</code>에 ChatGPT 전용 <code>AI OFFICE</code> public OAuth 앱을 수동 등록</li>
 <li>결과: Client ID <code>49134225-011b-4ecc-aaca-62d04f6114a1</code> 발급. PKCE public client·secret 없음, ChatGPT callback 한 개만 등록, 동적 앱 등록 꺼짐 유지</li>
