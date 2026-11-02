@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-02 23:03</b><ul>
+<li>한 일: 기존 v5.2를 보존하고 Cloudflare Pages 운영본에 OAuth 동의 화면을 배포한 뒤, 경로 정규화 문제를 새 v5.2.1에서 수정해 재배포</li>
+<li>결과: <code>/oauth/consent</code>가 주소 변경 없이 HTTP 200으로 열리고, OAuth 클라이언트 미등록 상태라 허용·거절 버튼은 잠긴 채 모든 연결 요청을 차단. 기존 소유자 로그인 화면도 유지</li>
+<li>결과물 경로: ~/Downloads/AI 작업파일/지피티/온라인_AI_사무실_v5_2_1_OAuth경로수정_20261102/ · https://thisismine-ai-office.pages.dev/oauth/consent</li>
+<li>남은 일: 실제 OAuth 클라이언트의 정확한 ID·callback·scope 등록, OAuth 서버 활성화, 사용자의 최종 연결 동의. 이번 작업에서 OAuth 서버·client·key 설정은 변경하지 않았고 dot 실제 연결은 미완료</li></ul></div>
 <div class="entry"><b>2026-11-02 22:06</b><ul>
 <li>한 일: 기존 픽셀 사무실 v5.1을 보존하고, Supabase OAuth 2.1용 <code>/oauth/consent</code> 화면과 안전 컨트롤러를 별도 v5.2 로컬 준비본에 구현</li>
 <li>보안: 허용 클라이언트 목록은 실제 등록 전까지 비워 모든 요청을 차단. 소유자 로그인·허용 client ID·정확한 HTTPS callback·요청 scope를 대조하고 사용자가 버튼을 누른 경우에만 승인·거절하도록 구성</li>
