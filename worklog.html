@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-03 00:01</b><ul>
+<li>한 일: ChatGPT 전용 단일 Client 허용 v5.3을 기존 Cloudflare Pages 사무실에 운영 배포하고, Supabase의 <code>public.office_mcp_access_token_hook</code>을 활성화</li>
+<li>결과: 지정 Client·소유자·callback·<code>openid</code>·30일 만료만 허용. 잘못된 OAuth 요청은 허용 버튼이 잠기며 자동 승인·자동 실행·PC 제어는 포함하지 않음. 서버 접근 grant는 <code>active=false</code>로 유지되어 실제 데이터 접근은 계속 차단</li>
+<li>결과물 경로: ~/Downloads/AI 작업파일/지피티/온라인_AI_사무실_v5_3_OAuth30일단일허용_로컬준비_20261102/ · https://thisismine-ai-office.pages.dev/oauth/consent</li>
+<li>남은 일: 준비가 끝난 뒤 서버 grant를 별도 승인으로 활성화하고, 사용자가 ChatGPT에서 최종 OAuth 동의를 직접 누른 후 읽기·답변 연결을 검증. 현재 dot 실제 연결은 미완료</li></ul></div>
 <div class="entry"><b>2026-11-02 23:55</b><ul>
 <li>한 일: 기존 v5.2.1을 보존하고 ChatGPT OAuth 단일 client·단일 owner·단일 callback·30일 만료를 적용한 v5.3 로컬 준비본 제작</li>
 <li>결과: 실제 요청 scope를 표시하고 <code>openid</code>만 허용. 사무실 3개 자리 본인 메시지 읽기·dot 답변 쓰기·자동 실행/PC 제어 제외 문구와 만료시각을 표시하며 다른 client·owner·callback·scope 및 만료 후 승인을 차단</li>
