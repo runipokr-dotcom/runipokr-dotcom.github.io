@@ -36,6 +36,12 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-02 21:52</b><ul>
+<li>한 일: dot 실제 연결 전 Supabase OAuth 2.1 서버·OAuth 앱·Site URL 상태와 ChatGPT custom MCP 콜백 URI 요건을 읽기 전용으로 점검</li>
+<li>결과: ai-office OAuth Server는 비활성, OAuth 앱 0개, 신규 등록 비활성 상태. Site URL과 기존 로그인 콜백은 유지되며 설정 변경·비밀키 생성 없음</li>
+<li>확인: OAuth 동의 화면은 Site URL과 Authorization Path를 결합해 만들고, ChatGPT의 정확한 production redirect URI는 custom MCP 서버 등록 후 관리 페이지에서 복사해야 함</li>
+<li>결과물 경로: https://supabase.com/docs/guides/auth/oauth-server/getting-started · https://developers.openai.com/plugins/build/auth</li>
+<li>남은 일: MCP 서버와 동의 화면 준비 후 정확한 redirect URI 등록, OAuth 서버 활성화·클라이언트 연결, 사용자의 최종 동의. 현재 실제 dot 연결은 미완료</li></ul></div>
 <div class="entry"><b>2026-11-02 19:52</b><ul>
 <li>한 일: 픽셀 사무실 v5.1 운영 검증 결과 정리, 쿠폰 정산표 최신 수정 검산 및 유효기간 기준 목록 대조 완료 기록</li>
 <li>결과: 이메일 링크 로그인·중앙 저장·Realtime은 실제 검증 완료. 쿠폰 식별번호·등록코드·연락처·정산금액·개인 메모는 공개 기록에서 제외</li>
