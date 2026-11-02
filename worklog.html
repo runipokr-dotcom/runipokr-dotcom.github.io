@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-02 23:12</b><ul>
+<li>한 일: Supabase <code>ai-office</code> 프로젝트의 OAuth 2.1 서버를 활성화하고 승인 화면 경로를 <code>/oauth/consent</code>로 확정</li>
+<li>결과: 공개 OAuth/OIDC discovery HTTP 200 확인. Site URL 유지, OAuth 앱 0개, 동적 앱 등록·신규 가입·익명 로그인은 꺼진 상태 유지</li>
+<li>결과물 경로: https://supabase.com/dashboard/project/bpwrlijrhvjnqzxtscvf/auth/oauth-server · https://thisismine-ai-office.pages.dev/oauth/consent</li>
+<li>남은 일: ChatGPT 관리 화면의 정확한 callback URI 확보 후 OAuth 앱 1개 등록, 프런트 허용 목록 반영, 사용자의 최종 연결 동의. client·key 생성과 실제 dot 연결은 아직 미완료</li></ul></div>
 <div class="entry"><b>2026-11-02 23:03</b><ul>
 <li>한 일: 기존 v5.2를 보존하고 Cloudflare Pages 운영본에 OAuth 동의 화면을 배포한 뒤, 경로 정규화 문제를 새 v5.2.1에서 수정해 재배포</li>
 <li>결과: <code>/oauth/consent</code>가 주소 변경 없이 HTTP 200으로 열리고, OAuth 클라이언트 미등록 상태라 허용·거절 버튼은 잠긴 채 모든 연결 요청을 차단. 기존 소유자 로그인 화면도 유지</li>
