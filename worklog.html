@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-03 00:09</b><ul>
+<li>한 일: Supabase <code>ai-office</code>의 최종 Auth Hook 상태를 읽기 전용으로 재검증</li>
+<li>결과: Customize Access Token Claims hook은 Enabled이고 <code>public.office_mcp_access_token_hook(event jsonb)</code>을 사용. 현재 Auth Hooks 목록에 이 훅 한 건만 있어 다른 기존 token hook을 덮어쓴 정황 없음</li>
+<li>결과물 경로: https://supabase.com/dashboard/project/bpwrlijrhvjnqzxtscvf/auth/hooks</li>
+<li>남은 일: 없음. 이번 확인에서 설정·권한·데이터는 변경하지 않음</li></ul></div>
 <div class="entry"><b>2026-11-03 00:01</b><ul>
 <li>한 일: ChatGPT 전용 단일 Client 허용 v5.3을 기존 Cloudflare Pages 사무실에 운영 배포하고, Supabase의 <code>public.office_mcp_access_token_hook</code>을 활성화</li>
 <li>결과: 지정 Client·소유자·callback·<code>openid</code>·30일 만료만 허용. 잘못된 OAuth 요청은 허용 버튼이 잠기며 자동 승인·자동 실행·PC 제어는 포함하지 않음. 서버 접근 grant는 <code>active=false</code>로 유지되어 실제 데이터 접근은 계속 차단</li>
