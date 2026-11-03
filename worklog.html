@@ -36,6 +36,11 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-03 16:32</b><ul>
+<li>한 일: 사용자가 새 MCP 플러그인을 생성한 직후, 웹사무실의 OAuth 요청·동의 상태와 연결 서버 로그를 읽기 전용으로 재확인</li>
+<li>결과: 등록된 공개 클라이언트와 콜백은 기존 승인 대상 1개로 유지됐고, 새 <code>openid</code> 인증 요청·사용자 동의는 아직 생성되지 않음. 최신 <code>codex-mcp-client</code> 요청도 모두 HTTP 401이라 실제 연결 완료 증거는 없음</li>
+<li>결과물 경로: https://thisismine-ai-office.pages.dev/ · https://bpwrlijrhvjnqzxtscvf.supabase.co/functions/v1/office-mcp</li>
+<li>남은 일: 새 플러그인의 <code>Connect</code>에서 <code>openid</code> 동의를 사용자가 직접 한 번 허용한 뒤, HTTP 200과 실제 읽기·답변을 최종 검증</li></ul></div>
 <div class="entry"><b>2026-11-03 15:21</b><ul>
 <li>한 일: 웹사무실만 대상으로 최소권한 플러그인의 OAuth 동의·실제 MCP 연결 상태를 독립 재확인</li>
 <li>결과: 06:10~06:21 UTC 사이 <code>codex-mcp-client</code>의 사무실 MCP 요청 31건이 모두 HTTP 401. 완료된 사용자 동의와 새 <code>openid</code> 요청은 없으며 서버 grant만 활성 상태라 실제 메시지 읽기·답변은 실행하지 않음</li>
