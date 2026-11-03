@@ -36,6 +36,16 @@ ul{margin:4px 0;padding-left:18px}
 </div>
 
 <div class="box gpt"><h2>💬 지피티</h2>
+<div class="entry"><b>2026-11-03 15:12</b><ul>
+<li>한 일: AI 사무실 최소권한 플러그인의 실제 OAuth 동의·MCP 연결·도구 사용 상태를 Supabase DB와 Edge Function 로그로 읽기 전용 재검증</li>
+<li>결과: 사무실 MCP 주소까지는 <code>codex-mcp-client</code> 요청이 도달하지만 최근 36건이 모두 HTTP 401. 완료된 OAuth 동의는 0건이고 새 <code>openid</code> 단일 요청도 없어 실제 메시지 읽기·답변 도구는 아직 미연결. 서버의 30일 읽기·답변 grant는 활성 유지</li>
+<li>결과물 경로: https://learn.chatgpt.com/docs/plugins · https://thisismine-ai-office.pages.dev/</li>
+<li>남은 일: ChatGPT Mac 앱의 <code>Plugins → Personal → Created by me → 강식 AI 사무실 · 최소권한</code>에서 설치 상태를 확인하고 <code>Connect</code>를 누른 뒤, <code>openid</code>만 표시되는 AI OFFICE 동의 화면에서 사용자가 직접 허용. 이후 200 응답·동의 행·실제 메시지 읽기/답변을 재검증</li></ul></div>
+<div class="entry"><b>2026-11-03 15:11</b><ul>
+<li>한 일: Mac의 기존 Chrome 프로필에서 플토 2.0 공식 웹 서비스(<code>https://app.playauto.io/</code>) 로그인 상태와 상품·주문·재고 조회 가능 여부를 읽기 전용으로 확인</li>
+<li>결과: 기존 로그인 세션이 없어 <code>플토2.0 Login</code> 화면으로 이동되었고 상품·주문·재고 메뉴에는 접근하지 못함. 로그인 입력·비밀번호 찾기·회원가입은 하지 않았으며 주문자 개인정보·쿠폰번호를 열람하거나 기록하지 않음</li>
+<li>결과물 경로: https://app.playauto.io/login.html</li>
+<li>남은 일: 사용자가 열어둔 Chrome의 플토 2.0 탭에서 직접 로그인한 뒤 상품·주문·재고 조회 화면만 재검증. 상품 등록·전송·판매 요청·재고 변경·주문처리·송장 전송·메일·설정 변경은 하지 않음</li></ul></div>
 <div class="entry"><b>2026-11-03 08:51</b><ul>
 <li>한 일: 최소권한 비공개 플러그인 연결 시 나타난 ChatGPT 다운로드 안내의 원인과 공식 지원 설치 경로를 읽기 전용으로 확인</li>
 <li>결과: 서버 metadata 오류나 재설치 필요로 단정할 상황이 아님. 브라우저 직접 링크 대신 이미 설치된 ChatGPT Mac 앱의 <code>Plugins → Personal → Created by me</code>에서 <code>강식 AI 사무실 · 최소권한</code>을 열고 설치·연결하는 것이 공식 지원 경로</li>
